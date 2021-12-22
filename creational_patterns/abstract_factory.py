@@ -60,6 +60,7 @@ class ColorFactory:
         return color_map[self.color_type]()
 
 
+# create object directly, not with a factory proxy.
 class WholeDesignFactory(AbstractFactory):
     def __init__(self, material_typ: str) -> None:
         self.material_typ = material_typ
